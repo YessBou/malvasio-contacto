@@ -1,0 +1,198 @@
+body {
+    font-family: 'Montserrat';
+}
+
+h1 {
+    color: #1a2e7f;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+.portada {
+    width: 100%;
+    height: 300px;
+    background-image: url('https://i.postimg.cc/HLK48dM5/libros.jpg');
+    /* Enlace directo */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.imagen-extra {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.material-icons {
+    font-size: 24px;
+    color: #0d47a1;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.container-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+}
+
+.container {
+    flex: 1 1 400px;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2,
+h3 {
+    text-align: center;
+    background: linear-gradient(90deg, #0d47a1, #8bc34a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    color: #0d47a1;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #8bc34a;
+}
+
+.form-actions {
+    text-align: center;
+}
+
+.form-actions button {
+    background: linear-gradient(90deg, #0d47a1, #8bc34a);
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.form-actions button:hover {
+    transform: scale(1.05);
+}
+
+.contact-info {
+    flex: 1 1 300px;
+    max-width: 300px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.contact-info ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.ubicacion {
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: #ffffff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s;
+    z-index: 1000;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-button img {
+    width: 35px;
+    height: 35px;
+}
+
+/* Adaptabilidad */
+@media (max-width: 768px) {
+    .container-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info {
+        max-width: 400px;
+    }
+}
