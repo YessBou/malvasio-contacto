@@ -1,9 +1,9 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    margin: 0 60px;
 }
 
 h1 {
+    text-align: center;
     color: #1a2e7f;
     font-size: 30px;
     font-weight: bold;
@@ -11,7 +11,14 @@ h1 {
 
 h5{
     font-size: 14px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
+    margin-top: 16px;
+}
+
+hr {
+    background-color: rgb(45, 45, 45);
+    height: 0.5px;
+    width: 90%;
 }
 
 
@@ -133,17 +140,19 @@ h5{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    column-gap: 35px;
+    column-gap: 26px;
+    row-gap: 16px;
 }
 
 .card-aside {
     justify-self: center;
     align-self: center;
     min-height: 110px;
-    min-width: 144px;
-    padding: 6px;
+    min-width: 124px;
+    padding: 8px;
     background-color: white;
     border-radius: 15px;
+    text-align: center;
 }
 
 .p-dire{
