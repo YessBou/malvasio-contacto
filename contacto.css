@@ -1,19 +1,25 @@
 body {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 60px;
 }
 
 h1 {
     color: #1a2e7f;
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h5{
+    font-size: 14px;
+    margin-bottom: 16px;
 }
 
 
-.portada {
+/* .portada {
     width: 100%;
     height: 300px;
     background-image: url('https://i.postimg.cc/HLK48dM5/libros.jpg');
-    /* Enlace directo */
+    
     background-size: cover;
     background-position: center;
     display: flex;
@@ -22,10 +28,10 @@ h1 {
     color: white;
     font-size: 2rem;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-}
+} */
 
 
-.imagen-extra {
+/* .imagen-extra {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
@@ -38,68 +44,71 @@ h1 {
     color: #0d47a1;
     vertical-align: middle;
     margin-right: 10px;
-}
+} */
 
 .container-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    max-width: 1200px;
-    width: 100%;
-    padding: 20px;
+    justify-content: space-evenly;
+    margin-top: 42px;
 }
 
 .container {
-    flex: 1 1 400px;
-    max-width: 400px;
+    display: flex;
+    max-width: 450px;
     background-color: #ffffff;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-h2,
-h3 {
-    text-align: center;
-    background: linear-gradient(90deg, #0d47a1, #8bc34a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 1.8rem;
-    margin-bottom: 20px;
 }
 
 .form-group {
-    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
-.form-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
+.card-titulo {
+    margin: 8px 0px
 }
 
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
+.card-subtitulo {
+    font-size: 14px;
+    margin: 0px;
+}
+
+.card-contenido {
+    margin: 32px 0px;
+}
+
+.card-inputs {
+    font-family: 'Montserrat';
+    border: black solid 1px;
+    padding: 12px;
+    width: 94% !important;
+    border-radius: 8px;
+
     outline: none;
-    color: #0d47a1;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-    border-color: #8bc34a;
+.card-inputs:focus {
+    border-color: #00a88f;
+    border-width: 1px;
+}
+
+.titulo-input {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a2e7f;
+    margin-bottom: 8px;
 }
 
 .form-actions {
-    text-align: center;
+    display: flex;
+    justify-content: end;
+    margin: 0px;
+    align-items: center;
+    gap: 6px;
 }
 
-.form-actions button {
+/* .form-actions button {
     background: linear-gradient(90deg, #0d47a1, #8bc34a);
     color: #ffffff;
     padding: 10px 20px;
@@ -108,33 +117,39 @@ h3 {
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s, transform 0.2s;
-}
+} */
 
-.form-actions button:hover {
+/* .form-actions button:hover {
     transform: scale(1.05);
-}
+} */
 
 .contact-info {
-    flex: 1 1 300px;
-    max-width: 300px;
-    background-color: #ffffff;
-    padding: 20px;
+    max-width: 350px;
+    background-color: #dce9df;
+    padding: 24px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    column-gap: 35px;
 }
 
-.contact-info ul {
-    list-style: none;
-    padding: 0;
-    width: 100%;
+.card-aside {
+    justify-self: center;
+    align-self: center;
+    min-height: 110px;
+    min-width: 144px;
+    padding: 6px;
+    background-color: white;
+    border-radius: 15px;
 }
 
-.contact-info ul li {
-    font-size: 1rem;
-    margin-bottom: 10px;
+.p-dire{
+    font-size: 13px;
+    margin-bottom: 8px;
+    margin-top: 0px;
 }
 
 .ubicacion {
@@ -183,6 +198,30 @@ iframe {
 .whatsapp-button img {
     width: 35px;
     height: 35px;
+}
+
+.boton-principal {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    padding: 8px 24px;
+    cursor: pointer;
+    background: linear-gradient(90deg, #1a2e7f, #004390, #00569b, #0068a0, #0079a0, #00899c, #009996, #00a88f);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.boton-principal:hover {
+    background: #1a2e7f;
+}
+
+.validaciones-campos {
+    color: red;
+    font-size: 12px;
+    margin: 2px 0 5px 0;
+    min-height: 18px;
+    visibility: hidden;
 }
 
 /* Adaptabilidad */

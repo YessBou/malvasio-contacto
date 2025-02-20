@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,52 +12,91 @@
         rel="stylesheet">
     <link rel="stylesheet" href="contacto.css">
 </head>
+
 <body>
-    <h1>Contacto</h1>
+    <main>
+        <h1>Contactanos</h1>
+        <hr>
 
-    
-    <div class="container-wrapper">
-        <div class="container">
-            <form id="contactForm">
-                <h2>Envianos tu consulta</h2>
-                <p>Tenes dudas sobre alguno de nuestros porductos o servicios, dejanos un mensaje y a la vrebedad te responderemos</p>
 
-                <div class="form-group">
-                    <label for="mail">Email:</label>
-                    <input type="email" id="mail" name="mail" required placeholder="Escribe tu email">
+        <div class="container-wrapper">
+            <div class="container">
+                <form id="contactForm">
+                    <h2 class="card-titulo">Envianos tu consulta</h2>
+                    <p class="card-subtitulo">Tenes dudas sobre alguno de nuestros porductos o servicios, dejanos un
+                        mensaje
+                        y a la brevedad te
+                        responderemos</p>
+                    <div class="card-contenido">
+                        <div class="form-group">
+                            <label for="nombre" class="titulo-input">Nombre y Apellido: *</label>
+                            <input type="text" id="nombre" name="nombre" class="card-inputs" maxlength="30" required
+                                placeholder="Ingresá tu nombre y apellido" oninput="validarCampo('nombre')">
+                            <p id="errorNombre" class="validaciones-campos"></p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mail" class="titulo-input">Email: *</label>
+                            <input type="email" id="email" name="email" class="card-inputs" maxlength="60" required
+                                placeholder="Ingresá tu email" oninput="validarCampo('email')">
+                            <p id="errorEmail" class="validaciones-campos"></p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje" class="titulo-input">Mensaje: *</label>
+                            <textarea id="mensaje" name="mensaje" class="card-inputs" required rows="4"
+                                placeholder="Escribe tu mensaje aquí..." oninput="validarCampo('mensaje')"></textarea>
+                            <p id="errorMensaje" class="validaciones-campos"></p>
+                        </div>
+                    </div>
+
+
+                    <div class="form-actions">
+                        <p id="mensajeResultado" class="validaciones-campos" style="visibility: hidden;"></p>
+                        <img src="/malvasio-contacto/img/spinner.gif" alt="" style="width: 30px; display: none">
+                        <button type="button" onclick="enviarCorreo()" disabled class="boton-principal">Enviar</button>
+                    </div>
+                </form>
+            </div>
+
+            <aside class="contact-info">
+                <div class="card-aside">
+                    <img src="/malvasio-contacto/img/wapp-move.gif" width="40" alt="">
+                    <p style="font-size: 13px; font-weight: 600; margin: 8px 0px;">WhatsApp</p>
+                    <p style="font-size: 13px; margin: 0px;">+54 345 6252954</p>
                 </div>
-                
-                <div class="form-group">
-                    <label for="asunto">Asunto:</label>
-                    <input type="text" id="asunto" name="asunto" required placeholder="Escribe el asunto">
+                <div class="card-aside">
+                    <img src="/malvasio-contacto/img/instagram.gif" width="40" alt="">
+                    <p style="font-size: 13px; font-weight: 600; margin: 8px 0px;">Instagram</p>
+                    <p style="font-size: 13px; margin: 0px;">@errepar.holistor</p>
+                    <p style="font-size: 13px; margin: 0px;">.malvasio</p>
+                </div>
+                <div class="card-aside">
+                    <img src="/malvasio-contacto/img/wapp-move.gif" width="40" alt="">
+                    <p style="font-size: 13px; font-weight: 600; margin: 8px 0px;">Telefono</p>
+                    <p style="font-size: 13px; margin: 0px;">+54 345 4224545</p>
+                </div>
+                <div class="card-aside">
+                    <img src="/malvasio-contacto/img/wapp-move.gif" width="40" alt="">
+                    <p style="font-size: 13px; font-weight: 600; margin: 8px 0px;">Email</p>
+                    <p style="font-size: 13px; margin: 0px;">edicionesvision</p>
+                    <p style="font-size: 13px; margin: 0px;">@gmail.com</p>
                 </div>
 
-                <div class="form-group">
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" required rows="4"
-                        placeholder="Escribe tu mensaje aquí..."></textarea>
+                <div style="width: 90%;;">
+                    <hr style="height: 1px; background-color: black;">
+                    <h5>Dirección</h5>
+                    <p class="p-dire">P. del Castillo 1348</p>
+                    <p class="p-dire">Concordia, Entre Rios (3200)</p>
                 </div>
 
-                <div class="form-actions">
-                    <button type="button" onclick="enviarCorreo()">Enviar</button>
-                </div>
-            </form>
+            </aside>
         </div>
+    </main>
 
-        <aside class="contact-info">
-            <h3>Contacto</h3>
-            <ul>
-                <li><i class="material-icons">phone</i><strong>Teléfono:</strong> +54 9 11 1234 5678</li>
-                <li><i class="material-icons">email</i><strong>Correo:</strong> <a
-                        href="mailto:contacto@ejemplo.com">contacto@ejemplo.com</a></li>
-                <li><i class="material-icons">location_on</i><strong>Dirección:</strong> Av. Siempre Viva 742, Buenos
-                    Aires</li>
-            </ul>
-        </aside>
-    </div>
 
     <section class="ubicacion">
-        <h3>Ubicación</h3>
+        <h2 class="card-titulo">Ubicación</h2>
         <div class="map-container">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.8354005798845!2d-58.38155998467992!3d-34.60373498045978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac62f06c33f%3A0x6e9b0e5274342fa3!2sObelisco%2C%20C1043%20CABA%2C%20Argentina!5e0!3m2!1ses-419!2ses!4v1688461215681!5m2!1ses-419!2ses"
@@ -71,6 +111,7 @@
     </a>
 
     <script src="contacto.js"></script>
-    
+
 </body>
+
 </html>
