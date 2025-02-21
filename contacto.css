@@ -72,6 +72,11 @@ hr {
     flex-direction: column;
 }
 
+.a-card {
+    text-decoration: none;
+    color: black;
+}
+
 .card-titulo {
     margin: 8px 0px
 }
@@ -274,9 +279,9 @@ iframe {
     }
 
     .whatsapp-button {
-        bottom: 65px;
+        bottom: 60px;
         right: 20px;
-        width: 40px;
+        width: 30px;
         height: 60px;
     }
 }
