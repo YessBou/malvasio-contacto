@@ -248,9 +248,17 @@ iframe {
 }
 
 @media (max-width: 480px) {
+    h5{
+        font-size: 15px;
+    }
+
+    .p-dire{
+        font-size: 14px;
+    }
     .container-wrapper {
         flex-direction: column;
         align-items: center;
+        margin-top: 32px;
     }
 
     .contact-info {
