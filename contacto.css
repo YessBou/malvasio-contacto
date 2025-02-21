@@ -9,7 +9,7 @@ h1 {
     font-weight: bold;
 }
 
-h5{
+h5 {
     font-size: 14px;
     margin-bottom: 12px;
     margin-top: 16px;
@@ -155,7 +155,7 @@ hr {
     text-align: center;
 }
 
-.p-dire{
+.p-dire {
     font-size: 13px;
     margin-bottom: 8px;
     margin-top: 0px;
@@ -184,9 +184,9 @@ iframe {
 
 .whatsapp-button {
     position: fixed;
-    bottom: 120px; 
+    bottom: 20px;
     right: 20px;
-    width: 40px;
+    width: 60px;
     height: 60px;
     border-radius: 50%;
     display: flex;
@@ -252,24 +252,31 @@ iframe {
         max-width: 400px;
     }
 
-    .card-subtitulo{
+    .card-subtitulo {
         font-size: 15px;
     }
 
-    .card-inputs{
+    .card-inputs {
         font-size: 15px;
     }
 
-    .card-contenido{
+    .card-contenido {
         margin-top: 18px;
         margin-bottom: 8px;
     }
 
-    .titulo-input{
+    .titulo-input {
         font-size: 15px;
     }
 
-    .form-actions{
+    .form-actions {
         margin-bottom: 32px;
+    }
+
+    .whatsapp-button {
+        bottom: 80px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
     }
 }
