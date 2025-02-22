@@ -1,5 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    margin: 0px;
 }
 
 h1 {
@@ -170,6 +171,7 @@ hr {
     width: 100%;
     margin-top: 52px;
     text-align: center;
+    padding-bottom: 1rem;
 }
 
 .map-container {
@@ -235,6 +237,61 @@ iframe {
     visibility: hidden;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a2e7f;
+    padding-top: 8.5px;
+    margin: auto;
+}
+
+.hr-footer {
+    background-color: rgba(255, 255, 255, 0.200000003);
+    height: 2.5px;
+    border: none;
+    width: 78%;
+    padding-left: 36px;
+    padding-right: 36px;
+    margin: 0px 64px;
+}
+
+.contenido-footer {
+    text-align: center;
+    margin-top: 8.5px;
+    padding: 16px 0px;
+}
+
+.a-footer {
+    text-decoration: none;
+}
+
+.img-footer {
+    text-decoration: none;
+    width: 20px;
+    margin: 6px;
+}
+
+.p-footer-mail {
+    font-size: 9.0pt;
+    vertical-align: baseline;
+    margin: 0px;
+    color: white;
+}
+
+.p-footer-derechos {
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 8.0pt;
+    font-style: normal;
+    font-variant: normal;
+    text-decoration: none;
+    vertical-align: baseline;
+    line-height: 0.6;
+    padding: 12px 8px;
+    margin-bottom: 0px;
+}
+
 /* Adaptabilidad */
 @media (max-width: 768px) {
     .container-wrapper {
@@ -248,13 +305,14 @@ iframe {
 }
 
 @media (max-width: 480px) {
-    h5{
+    h5 {
         font-size: 15px;
     }
 
-    .p-dire{
+    .p-dire {
         font-size: 14px;
     }
+
     .container-wrapper {
         flex-direction: column;
         align-items: center;
@@ -291,5 +349,10 @@ iframe {
         right: 20px;
         width: 30px;
         height: 60px;
+    }
+
+    .p-footer-derechos {
+        padding: 12px 18px;
+        line-height: 0.9;
     }
 }
