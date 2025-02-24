@@ -22,37 +22,9 @@ hr {
     width: 90%;
 }
 
-
-/* .portada {
-    width: 100%;
-    height: 300px;
-    background-image: url('https://i.postimg.cc/HLK48dM5/libros.jpg');
-    
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 2rem;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-} */
-
-
-/* .imagen-extra {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin: 20px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.titulo-pagina {
+    margin-bottom: 17px;
 }
-
-.material-icons {
-    font-size: 24px;
-    color: #0d47a1;
-    vertical-align: middle;
-    margin-right: 10px;
-} */
 
 .container-wrapper {
     display: flex;
