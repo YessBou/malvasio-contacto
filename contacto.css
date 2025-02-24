@@ -19,11 +19,17 @@ h5 {
 hr {
     background-color: rgb(45, 45, 45);
     height: 0.5px;
-    width: 84%;
+    width: 90%;
 }
 
 .titulo-pagina {
     margin-bottom: 17px;
+}
+
+.hr-titulo {
+    background-color: rgb(0, 0, 0);
+    height: 0.5px;
+    width: 84%;
 }
 
 .container-wrapper {
@@ -187,18 +193,20 @@ iframe {
 
 .boton-principal {
     font-family: 'Montserrat';
-    font-size: 14px;
-    padding: 8px 24px;
-    cursor: pointer;
-    background: linear-gradient(90deg, #1a2e7f, #004390, #00569b, #0068a0, #0079a0, #00899c, #009996, #00a88f);
+    font-size: 16px;
+    padding: 8px 12px;
     border: none;
-    border-radius: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(26, 46, 127, 1);
     color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 .boton-principal:hover {
-    background: #1a2e7f;
+    box-shadow: 2px 2px 6px -2px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: 2px 2px 6px -2px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 2px 2px 6px -2px rgba(0, 0, 0, 0.8);
 }
 
 .validaciones-campos {
